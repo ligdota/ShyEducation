@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shy Education</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+
+
+<body>
+  <h1> Welcome to ShyEducation where we will discuss STEM topics to get ready for university or job search.</h1>
+  <div id="app"></div>
+  <script src="index.js"></script>
+
+
+
+  <div class="container">
+    <header>Welcome to ShyEducation</header>
+    <br>
+    <br>
+    <br>
+    <img src="public/images/ShyEducation.png" alt="Shy education logo">
+  </div>
+<nav id="navigation"></nav>
+
+  <div class="sidenav">
+    <a class="leftbuttons" href="./index.html">Home</a>
+    <a class="leftbuttons" href="./contact.html">Contact</a>
+    <button class="dropdown-btn leftbuttons">Topics
+    <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a class="leftbuttons" href="./research.html">Research</a>
+        <a class="leftbuttons" href="./education.html">Education</a>
+        <a class="leftbuttons" href="./communication.html">Communication</a>
+        <a class="leftbuttons" href="./lifesafety.html">Life Safety</a>
+        <a class="leftbuttons" href="./internetsafety.html">Internet Safety</a>
+        <a class="leftbuttons" href="./fitness.html">Fitness</a>
+        <a class="leftbuttons" href="./health.html">Health</a>
+        <a class="leftbuttons" href="./food.html">Food</a>
+        <a class="leftbuttons" href="./gaming.html">Gaming</a>
+      </div>
+    </div>
+  
+
+    <div class="topbar">
+    <button class="topbtn">Login</button>
+    <button class="topbtn">Register</button>
+    </div>
+
+
+  
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+
+    <section>
+    <p>This website was built as an outlet to give knowledge to people of all ages in order to have success in all areas of your life.
+      <br> There's topics on all sorts of facets of life including but not limited to education, communication, learning, happiness, personal relationships.<br> Just use the search bar below or the topics tab to the left to search whatever you'd like to find. </p>
+    </section>
+
+<div class="search" align="center">
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" aria-label="Search"><i class="fa fa-search"></i></button>   
+    </form>
+</div>
+</body>
+</html>
