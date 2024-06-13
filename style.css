@@ -1,0 +1,158 @@
+
+body {
+    background-color: #010808;
+    font-family: Arial, sans-serif;
+    color: #f01010;
+}
+
+h1 {
+  font-size: 35px;
+  color: #d8a8a8;
+}
+header {
+    color: #f3eaea;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  font-size: 20px;
+  padding-top: 65px;
+  position: relative;
+  left: 50px;
+  top: 150px;
+  text-align: center;
+  color: #f7f4f4;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+  
+.search {
+  position: relative;
+  padding: 20px;
+}
+  
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.topics::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.leftbuttons:hover {
+  background-color: #5a4a4a;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1eeee;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.topbar {
+  color: #f1eeee;
+  display: inline-block;
+  text-align: right;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.topbtn {
+  font-size: 20px;
+  background: transparent;
+  color: #f1eeee;
+  border: 2px solid #4b4646;
+  cursor: pointer;
+  outline: none;
+  font-weight: 500;
+  width: 120px;
+  height: 40px;
+  transition: .5s;
+}
+
+.topbtn:hover {
+  background: #fff;
+  color: rgb(75, 63, 63);
+}
+
+
+
+
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+section {
+    flex-grow: 1;
+    align-items: center;
+}
+
+
+
